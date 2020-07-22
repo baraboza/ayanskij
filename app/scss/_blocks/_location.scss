@@ -1,0 +1,176 @@
+.location {
+	margin-top: 80px;
+	padding-bottom: 80px;
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: -100px;
+		right: 0;
+		width: 649px;
+		height: 630px;
+		background-image: url('../img/location-branch.png');
+	}
+
+	&__row {
+		margin-top: 60px;
+	}
+
+	&__item {
+		display: flex;
+
+		&:nth-child(n + 2) {
+			margin-top: 50px;
+		}
+
+		&:hover {
+			
+			.location {
+				&__icon-box {
+					transform: translate(0, 7px);
+					box-shadow: 0 5px 15px rgba(#d9e7c5, 0.68);
+				}
+			}
+		}
+	}
+
+	&__icon-box {
+		width: 83px;
+		height: 83px;
+		border-radius: 6px;
+		background-color: #fff;
+		@include flex-center;
+		padding: 15px;
+		flex-shrink: 0;
+		box-shadow: 0 12px 27px rgba(#d9e7c5, 0.68);
+		transition: 0.3s;
+	}
+
+	&__item-text {
+		margin-left: 35px;
+	}
+
+	&__item-title {
+		font-size: 18px;
+		font-weight: 500;
+		color: #87bc44;
+	}
+
+	&__item-desc {
+		margin-top: 20px;
+		font-size: 14px;
+		line-height: 21px;
+	}
+
+	&__video-label {
+		padding: 8px 0 8px 25px;
+		border-left: 3px solid #5466bd;
+		max-width: 420px;
+		line-height: 24px;
+		margin-left: 54px;
+	}
+
+	&__video {
+		display: block;
+		margin-top: 44px;
+		position: relative;
+		border-radius: 20px 0 20px 0;
+		overflow: hidden;
+		margin-left: 47px;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 208px;
+			height: 208px;
+			margin-top: -104px;
+			margin-left: -104px;
+			background-image: url('../img/video-icon.png');
+			transition: transform 0.3s;
+		}
+
+		img {
+			width: 100%;
+			transition: filter 0.3s;
+		}
+
+		&:hover {
+			
+			&::after {
+				transform: scale(1.1);
+			}
+
+			img {
+				filter: brightness(80%);
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.location {
+
+		&::before {
+			display: none;
+		}
+
+		&__video-label {
+			margin-left: 0;
+			margin-top: 50px;
+		}
+
+		&__video {
+			margin-left: 0;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.location {
+		margin-top: 50px;
+		padding-bottom: 50px;
+
+		&__title {
+			text-align: center;
+		}
+
+		&__row {
+			margin-top: 30px;
+		}
+
+		&__item {
+
+			&:nth-child(n + 2) {
+				margin-top: 30px;
+			}
+		}
+
+		&__icon-box {
+			width: 60px;
+			height: 60px;
+			padding: 10px;
+		}
+
+		&__item-text {
+			margin-left: 20px;
+		}
+
+		&__item-desc {
+			margin-top: 10px;
+		}
+
+		&__video {
+
+			&::after {
+				width: 100px;
+				height: 100px;
+				margin-left: -50px;
+				margin-top: -50px;
+				background-size: 100%;
+			}
+		}
+	}
+}

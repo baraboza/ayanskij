@@ -1,0 +1,41 @@
+.input {
+	display: block;
+	width: 100%;
+	border: none;
+	border-radius: 6px;
+	background-color: #f6f7f7;
+	padding-left: 60px;
+	padding-right: 20px;
+	font-size: 14px;
+	height: 57px;
+	box-shadow: inset 0 2px 5px rgba(#2c3438, 0.2);
+	background-repeat: no-repeat;
+
+	&::placeholder {
+		color: #2c3438;
+	}
+
+	&--name {
+		background-image: url('../img/1.svg');
+		background-size: 22px 22px;
+		background-position: 18px 50%;
+	}
+
+	&--tel {
+		background-image: url('../img/2.svg');
+		background-size: 20px 21px;
+		background-position: 19px 50%;
+	}
+
+	&--email {
+		background-image: url('../img/3.svg');
+		background-size: 22px 18px;
+		background-position: 18px 50%;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.input {
+		font-size: 16px;
+	}
+}

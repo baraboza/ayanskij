@@ -1,0 +1,6 @@
+@import "_mixins/font-face";
+
+@include font-face('Google Sans', '../font/GoogleSans-Regular');
+@include font-face('Google Sans', '../font/GoogleSans-Medium', 500);
+@include font-face('Google Sans', '../font/GoogleSans-Bold', 700);
+@include font-face('Google Sans', '../font/GoogleSans-BoldItalic', 700, italic);

@@ -1,0 +1,91 @@
+.steps {
+	padding-top: 45px;
+	padding-bottom: 75px;
+	background-color: #d9e7c5;
+
+	&__title {
+		max-width: 700px;
+	}
+
+	&__list {
+		margin-top: 10px;
+		counter-reset: list;
+	}
+
+	&__item {
+		margin-top: 50px;
+	}
+
+	&__item-box {
+		background-color: #fff;
+		height: 100%;
+		position: relative;
+		padding: 30px 30px 15px;
+		border-radius: 6px;
+		box-shadow: 0 12px 25px rgba(#719a3d, 0.4);
+		transition: 0.3s;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: -19px;
+			left: 50%;
+			margin-left: -20px;
+			@include circle(40px);
+			background-image:  
+				url('../img/check-mark.svg'),
+				linear-gradient(to bottom, #87bc44, #628d2c);
+			background-repeat: no-repeat;
+			background-size: 17px, 100% 100%;
+			background-position: center center;
+			box-shadow:
+				inset 0 0 13px rgba(#fff, 0.2),
+				0 15px 20px rgba(#648c30, 0.4);
+			transition: 0.3s;
+		}
+
+		&:hover {
+			transform: translate(0, -5px);
+			box-shadow: 0 17px 30px rgba(#719a3d, 0.3);
+			
+			&::before {
+				transform: scale(1.22);
+			}
+		}
+	}
+
+	&__item-number {
+		font-size: 24px;
+		font-weight: 700;
+		color: #5466bd;
+
+		&::before {
+			content: '0' counter(list);
+			counter-increment: list;
+		}
+	}
+
+	&__item-text {
+		font-size: 14px;
+		line-height: 21px;
+		margin-top: 15px;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.steps {
+		padding-bottom: 50px;
+
+		&__title {
+			text-align: center;
+		}
+
+		&__item {
+			margin-top: 35px;
+		}
+
+		&__item-box {
+			padding: 15px;
+		}
+	}
+}

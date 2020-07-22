@@ -1,0 +1,111 @@
+.projects {
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+	&__desc {
+		margin-top: 20px;
+		padding: 10px 0 10px 30px;
+		border-left: 3px solid #5466bd;
+		max-width: 650px;
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	&__slider {
+		margin-top: 35px;
+	}
+
+	&__slider-list {
+		margin-left: -10px;
+		margin-right: -10px;
+
+		.slick-list {
+			overflow: visible;
+		}
+
+		.slick-dots {
+			position: absolute;
+			bottom: -45px;
+			left: 50px;
+			right: 50px;
+			display: flex;
+			justify-content: center;
+			z-index: 1;
+
+			li {
+				margin: 0 10px;
+			}
+
+			button {
+				font-size: 0;
+				border: none;
+				background: #87bc44;
+				padding: 0;
+				@include circle(10px);
+			}
+
+			.slick-active {
+
+				button {
+					background-color: #5466bd;
+				}
+			}
+		}
+	}
+
+	&__slider-item {
+		padding-left: 10px;
+		padding-right: 10px;
+
+		img {
+			display: block;
+			@include cover;
+			border-radius: 8px;
+			opacity: 0.3;
+			transform: scale(0.97);
+			transition: 0.3s;
+		}
+
+		&.slick-active {
+
+			img {
+				box-shadow: 0 24px 38px -10px rgba(#939598, 0.63);
+				opacity: 1;
+				transform: scale(1);
+			}
+		}
+	}
+
+	&__controls {
+		margin-top: 28px;
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+	}
+
+	&__prev, &__next {
+		border: none;
+		background: none;
+		padding: 0;
+		@include hover-opacity;
+	}
+
+	&__button {
+		margin: 30px auto 0;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.projects {
+
+		&__title {
+			text-align: center;
+		}
+
+		&__desc {
+			padding: 5px 0 5px 15px;
+			font-size: 16px;
+			line-height: 22px;
+		}
+	}
+}

@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" type="image/png" href="img/favicon/favicon.png">
+	<meta name="theme-color" content="#000">
+	<link rel="stylesheet" href="fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="libs/fancybox-2.1.7/source/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__wrap">
+			<div class="header__main">
+				<div class="header__container">
+					<div class="header__main-row">
+						<a href="#" class="header__logo">
+							<img src="img/logo.svg" alt="">
+						</a>
+						<p class="header__title">
+							Клубный коттеджный квартал в с. Заречное<br> 
+							(пригород Симферополя)
+						</p>
+						<p class="header__contacts">
+							Офис: г. Симферополь, ул. Севастопольская, 123 <br>
+							E-mail: joffice@ayansky.ru
+						</p>
+						<p class="header__coords">
+							Координаты участков: <br> 
+							44° 31' 8.01" N 34° 13' 41.70" E
+						</p>
+						<div class="header__tel-wrap">
+							<a href="tel:+79781234567" class="header__tel">
+								<span class="header__tel-circle"><i class="fas fa-phone-alt"></i></span>
+								<span class="header__tel-text">+7 (978) 123 45 67</span>
+							</a>
+							<p class="header__tel-time">Пн-Сб 9:00-19:00</p>
+						</div>
+						<div class="header__toggle">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__nav">
+				<div class="header__container">
+					<ul class="header__nav-list">
+						<li class="header__nav-item"><a href="#about" class="js-scroll-link">О застройщике</a></li>
+						<li class="header__nav-item"><a href="#choice" class="js-scroll-link">Выбор коттеджа</a></li>
+						<li class="header__nav-item"><a href="#tech" class="js-scroll-link">Технологии строительства</a></li>
+						<li class="header__nav-item"><a href="#location" class="js-scroll-link">Расположение</a></li>
+						<li class="header__nav-item"><a href="#projects" class="js-scroll-link">Оформление интерьеров</a></li>
+						<li class="header__nav-item"><a href="#steps" class="js-scroll-link">Как купить коттедж</a></li>
+						<li class="header__nav-item"><a href="#footer" class="js-scroll-link">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="hero__bg"></div>
+			<div class="hero__content">
+				<p class="hero__title">Строим уникальную недвижимость в Крыму - коттеджи бизнес-класса в Салгирской долине</p>
+				<p class="hero__desc">Участки под застройку: ИЖС, 8 соток со всеми проведенными коммуникациями, рядом с Аянским водохранилищем</p>
+				<p class="hero__note">Проводим выездные экскурсии для потенциальных клиентов. Это бесплатно и интересно</p>
+				<a href="#" class="hero__button button">Записаться на просмотр участка<br> и выбор коттеджа</a>
+				<div class="hero__scroll-wrap">
+					<p class="hero__scroll">
+						<span>Скролльте</span>
+						<svg version="1.1" height="29" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+							<path fill="#2C3438" d="M256,0C165.4,0,91.7,73.7,91.7,164.3v183.4C91.7,438.3,165.4,512,256,512s164.3-73.7,164.3-164.3V164.3
+							C420.3,73.7,346.6,0,256,0z M256,30.8c72.8,0,132.2,58.6,133.5,131.1H271.4v-34.6c0-8.5-6.9-15.4-15.4-15.4s-15.4,6.9-15.4,15.4
+							v34.6H122.5C123.8,89.4,183.2,30.8,256,30.8z M389.5,347.7c0,73.6-59.9,133.5-133.5,133.5s-133.5-59.9-133.5-133.5v-155h118.1
+							v34.6c0,8.5,6.9,15.4,15.4,15.4s15.4-6.9,15.4-15.4v-34.6h118.1V347.7L389.5,347.7z"/>
+						</svg>
+					</p>
+				</div>
+			</div>
+		</section>
+		
+		<section class="intro">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 offset-md-1">
+						<p class="intro__title h3">Участки под застройку: ИЖС, 8 соток со всеми проведенными коммуникациями, рядом с Аянским водохранилищем</p>
+						<ul class="intro__list row">
+							<li class="intro__item col">
+								<div class="intro__item-box">
+									<p>На участках есть все коммуникации: газ, вода (централизованная), электричество, канализационные септики</p>
+								</div>
+							</li>
+							<li class="intro__item col">
+								<div class="intro__item-box">
+									<p>От коттеджей можно доехать за 25 минут до центра Симферополя и за 30 минут до пляжей южного побережья Крыма</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="choice" class="choice">
+			<div class="container">
+				<p class="choice__title h2">Выбор участка и коттеджа</p>
+				<div class="choice__box">
+					<img src="img/choice-image.jpg" alt="" class="choice__image">
+					<ul class="choice__list">
+						<li class="choice__item">
+							<a href="#" class="choice__item-box">
+								<span class="choice__number">01</span>
+								<div class="choice__info">
+									<p class="choice__info-title">Коттедж №1</p>
+									<p class="choice__info-text">
+										Пл. участка: <b>808 м<sup>2</sup></b><br>
+										Пл. дома: <b>150 м<sup>2</sup></b><br>
+										Стоимость: <b>13 млн. Р.</b>
+									</p>
+									<p class="choice__status">Свободно</p>
+								</div>
+							</a>
+						</li>
+						<li class="choice__item">
+							<a href="#" class="choice__item-box">
+								<span class="choice__number">02</span>
+								<div class="choice__info">
+									<p class="choice__info-title">Коттедж №2</p>
+									<p class="choice__status">Продано</p>
+								</div>
+							</a>
+						</li>
+						<li class="choice__item">
+							<a href="#" class="choice__item-box">
+								<span class="choice__number">03</span>
+								<div class="choice__info">
+									<p class="choice__info-title">Коттедж №3</p>
+									<p class="choice__info-text">
+										Пл. участка: <b>808 м<sup>2</sup></b><br>
+										Пл. дома: <b>150 м<sup>2</sup></b><br>
+										Стоимость: <b>13 млн. Р.</b>
+									</p>
+									<p class="choice__status">Забронировано</p>
+								</div>
+							</a>
+						</li>
+						<li class="choice__item">
+							<a href="#" class="choice__item-box">
+								<span class="choice__number">04</span>
+								<div class="choice__info">
+									<p class="choice__info-title">Коттедж №4</p>
+									<p class="choice__info-text">
+										Пл. участка: <b>808 м<sup>2</sup></b><br>
+										Пл. дома: <b>150 м<sup>2</sup></b><br>
+										Стоимость: <b>13 млн. Р.</b>
+									</p>
+									<p class="choice__status">Свободно</p>
+								</div>
+							</a>
+						</li>
+						<li class="choice__item">
+							<a href="#" class="choice__item-box">
+								<span class="choice__number">05</span>
+								<div class="choice__info">
+									<p class="choice__info-title">Коттедж №5</p>
+									<p class="choice__info-text">
+										Пл. участка: <b>808 м<sup>2</sup></b><br>
+										Пл. дома: <b>150 м<sup>2</sup></b><br>
+										Стоимость: <b>13 млн. Р.</b>
+									</p>
+									<p class="choice__status">Свободно</p>
+								</div>
+							</a>
+						</li>
+						<li class="choice__item">
+							<a href="#" class="choice__item-box">
+								<span class="choice__number">06</span>
+								<div class="choice__info">
+									<p class="choice__info-title">Коттедж №6</p>
+									<p class="choice__info-text">
+										Пл. участка: <b>808 м<sup>2</sup></b><br>
+										Пл. дома: <b>150 м<sup>2</sup></b><br>
+										Стоимость: <b>13 млн. Р.</b>
+									</p>
+									<p class="choice__status">Свободно</p>
+								</div>
+							</a>
+						</li>
+						<li class="choice__item">
+							<a href="#" class="choice__item-box">
+								<span class="choice__number">07</span>
+								<div class="choice__info">
+									<p class="choice__info-title">Коттедж №7</p>
+									<p class="choice__info-text">
+										Пл. участка: <b>808 м<sup>2</sup></b><br>
+										Пл. дома: <b>150 м<sup>2</sup></b><br>
+										Стоимость: <b>13 млн. Р.</b>
+									</p>
+									<p class="choice__status">Свободно</p>
+								</div>
+							</a>
+						</li>
+						<li class="choice__item">
+							<a href="#" class="choice__item-box">
+								<span class="choice__number">08</span>
+								<div class="choice__info">
+									<p class="choice__info-title">Коттедж №8</p>
+									<p class="choice__info-text">
+										Пл. участка: <b>808 м<sup>2</sup></b><br>
+										Пл. дома: <b>150 м<sup>2</sup></b><br>
+										Стоимость: <b>13 млн. Р.</b>
+									</p>
+									<p class="choice__status">Свободно</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="special">
+			<div class="container">
+				<div class="special__box">
+					<div class="special__content">
+						<p class="special__title h2">Есть специальные условия по скидкам до <span>300 000 ₽</span></p>
+						<p class="special__text-cursive">Интересно?</p>
+						<p class="special__desc h3">Заполните форму и наши специалисты всё расскажут</p>
+					</div>
+					<form class="form">
+						<p class="form__title">Заполните форму и получите условия специального предложения</p>
+						<input type="text" class="form__input input input--name" placeholder="Имя">
+						<input type="tel" class="form__input input input--tel" placeholder="Телефон">
+						<input type="email" class="form__input input input--email" placeholder="Почта">
+						<input type="submit" class="form__button button" value="Узнать условия специального предложения">
+						<div class="form__checkbox-wrap">
+							<span class="wpcf7-form-control-wrap your-consent"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="your-consent" value="1" aria-invalid="false" checked="checked"><span class="wpcf7-list-item-label">Согласие на обработку персональных данных</span></label></span></span></span>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section class="advants">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8">
+						<p class="advants__title h2">Преимущества коттеджного квартала «Аянский»</p>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<div class="advants__item">
+							<p class="advants__item-text">Внимание к деталям и высокое качество строительства коттеджей</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<div class="advants__item">
+							<p class="advants__item-text">Современный подход к зонированию квартала, использование европейских практик в дизайне экстерьеров коттеджей</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<div class="advants__item">
+							<p class="advants__item-text">Охраняемая, закрытая от посторонних лиц территория. Всего 8 коттеджей для людей одного статуса, возможно друзей или знакомых</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<div class="advants__item">
+							<p class="advants__item-text">Индивидуальный подход к выбору коттеджа: размеру, планировке и типу отделки</p>
+						</div>
+					</div>
+				</div>
+				<div class="advants__slider">
+					<ul class="advants__slider-list">
+						<li class="advants__slider-item">
+							<img src="img/advants-slider.jpg" alt="">
+						</li>
+						<li class="advants__slider-item">
+							<img src="img/advants-slider.jpg" alt="">
+						</li>
+						<li class="advants__slider-item">
+							<img src="img/advants-slider.jpg" alt="">
+						</li>
+					</ul>
+					<div class="advants__controls">
+						<button class="advants__prev">
+							<svg class="svg-arrow-left">
+								<use xlink:href="#svg-arrow-left"></use>
+							</svg>
+						</button>
+						<button class="advants__next">
+							<svg class="svg-arrow-right">
+								<use xlink:href="#svg-arrow-right"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="location" class="location">
+			<div class="container">
+				<p class="location__title h2">Местоположение коттеджного квартала «Аянский»</p>
+				<div class="location__row row">
+					<div class="col-lg-5">
+						<ul class="location__list">
+							<li class="location__item">
+								<div class="location__icon-box">
+									<img src="img/bush.svg" alt="">
+								</div>
+								<div class="location__item-text">
+									<p class="location__item-title">Экологически чистый район Крыма</p>
+									<p class="location__item-desc">Рядом нет предприятий, трасса "Симферополь - Алушта" находится на достаточном удалении, чтобы её не было слышно.</p>
+								</div>
+							</li>
+							<li class="location__item">
+								<div class="location__icon-box">
+									<img src="img/road.svg" alt="">
+								</div>
+								<div class="location__item-text">
+									<p class="location__item-title">Отличная логистика</p>
+									<p class="location__item-desc">До аэропорта по окружной дороге 30 минут. За 25 минут можно доехать до центра Симферополя (здания парламента), до черты города 10 минут езды, до ближайшего пляжа на южном берегу не больше 30 минут. </p>
+								</div>
+							</li>
+							<li class="location__item">
+								<div class="location__icon-box">
+									<img src="img/waterfall.svg" alt="">
+								</div>
+								<div class="location__item-text">
+									<p class="location__item-title">Красивое место - крымское предгорье</p>
+									<p class="location__item-desc">В 5 километрах находится Кинопарк "Викинг", знаменитые Красные пещеры, водопад Су-Учхан. В 15 километрах - Мраморные пещеры, куда приезжают играть симфонические оркестры. </p>
+								</div>
+							</li>
+							<li class="location__item">
+								<div class="location__icon-box">
+									<img src="img/lake.svg" alt="">
+								</div>
+								<div class="location__item-text">
+									<p class="location__item-title">Вода здесь будет всегда</p>
+									<p class="location__item-desc">Коттеджи расположены рядом с Аянским водохранилищем, которое питает часть Симферополя. </p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-7">
+						<p class="location__video-label">Посмотрите видео о месте, где будет расположен коттеджный квартал «Аянский»</p>
+						<a href="http://www.youtube.com/watch?v=opj24KnzrWo" class="location__video fancybox-media">
+							<img src="img/location-video-image.jpg" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="tech" class="tech">
+			<div class="container">
+				<p class="tech__title h2">Технологии строительства</p>
+				<ul class="tech__list row">
+					<li class="tech__item col-md-6 col-lg-4">
+						<div class="tech__item-box">
+							<img src="img/tech-1.jpg" alt="" class="tech__image">
+							<p class="tech__item-title">Фундамент</p>
+							<p class="tech__item-desc">ленточный (монолитно-железобетонный)</p>
+						</div>
+					</li>
+					<li class="tech__item col-md-6 col-lg-4">
+						<div class="tech__item-box">
+							<img src="img/tech-2.jpg" alt="" class="tech__image">
+							<p class="tech__item-title">Стены</p>
+							<p class="tech__item-desc">Железобетонный сейсмостойкий каркас + заполнение стен газоблоклм (300 мм)</p>
+						</div>
+					</li>
+					<li class="tech__item col-md-6 col-lg-4">
+						<div class="tech__item-box">
+							<img src="img/tech-3.jpg" alt="" class="tech__image">
+							<p class="tech__item-title">Кровля</p>
+							<p class="tech__item-desc">Плоская, утепленная, эксплуатируемая. Из цельного профилированного листа</p>
+						</div>
+					</li>
+					<li class="tech__item col-md-6 col-lg-4">
+						<div class="tech__item-box">
+							<img src="img/tech-4.jpg" alt="" class="tech__image">
+							<p class="tech__item-title">Фасады</p>
+							<p class="tech__item-desc">Два варианта комбинированной отделки: штукатурка на акриловой основе + сушеная сосна или термодерево + клинкерный кирпич</p>
+						</div>
+					</li>
+					<li class="tech__item col-md-6 col-lg-4">
+						<div class="tech__item-box">
+							<img src="img/tech-5.jpg" alt="" class="tech__image">
+							<p class="tech__item-title">Окна и двери</p>
+							<p class="tech__item-desc">Двухкамерные энергосберегающие стеклопакеты, входная металлическая дверь (атмосферостойкая)</p>
+						</div>
+					</li>
+					<li class="tech__item col-md-6 col-lg-4">
+						<div class="tech__item-box">
+							<img src="img/tech-6.jpg" alt="" class="tech__image">
+							<p class="tech__item-title">Коммуникации</p>
+							<p class="tech__item-desc">Разводка газа, воды, канализации, отопления, света до точек подключения. Устройство вентиляции</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="projects" class="projects">
+			<div class="container">
+				<p class="projects__title h2">Проекты интерьеров коттеджей</p>
+				<p class="projects__desc">Вы можете выбрать готовый дизайн-проект или заказать разработку персонального проекта у наших специалистов</p>
+				<div class="projects__slider">
+					<ul class="projects__slider-list">
+						<li class="projects__slider-item">
+							<img src="img/projects-slider-1.jpg" alt="">
+						</li>
+						<li class="projects__slider-item">
+							<img src="img/projects-slider-1.jpg" alt="">
+						</li>
+						<li class="projects__slider-item">
+							<img src="img/projects-slider-1.jpg" alt="">
+						</li>
+					</ul>
+					<div class="projects__controls">
+						<button class="projects__prev">
+							<svg class="svg-arrow-left">
+								<use xlink:href="#svg-arrow-left"></use>
+							</svg>
+						</button>
+						<button class="projects__next">
+							<svg class="svg-arrow-right">
+								<use xlink:href="#svg-arrow-right"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<a href="#" class="projects__button button">Получить просчет на чистовую отделку коттеджа</a>
+			</div>
+		</section>
+
+		<section id="steps" class="steps">
+			<div class="container">
+				<p class="steps__title h2">Прозрачная схема покупки участка и строительства коттеджа</p>
+				<ul class="steps__list row">
+					<li class="steps__item col-md-6 col-lg-4">
+						<div class="steps__item-box">
+							<span class="steps__item-number"></span>
+							<p class="steps__item-text">Вы оставляете заявку на сайте или звоните нам по номеру 8 800 800 80 80. Мы предложим посетить участки и посмотреть на будущее место строительства коттеджного квартала</p>
+						</div>
+					</li>
+					<li class="steps__item col-md-6 col-lg-4">
+						<div class="steps__item-box">
+							<span class="steps__item-number"></span>
+							<p class="steps__item-text">Проясняем все юридические вопросы по заключению сделки (договор на приобретение земельного участка, договор на строительство, гарантийный договор и т.д.), проводим экскурсию на участках в Салгирской долине.</p>
+						</div>
+					</li>
+					<li class="steps__item col-md-6 col-lg-4">
+						<div class="steps__item-box">
+							<span class="steps__item-number"></span>
+							<p class="steps__item-text">Подписываете договор, вносите 30% от общей суммы и уже становитесь владельцем земельного участка ИЖС в самом красивом месте под Симферополем</p>
+						</div>
+					</li>
+					<li class="steps__item col-md-6 col-lg-4">
+						<div class="steps__item-box">
+							<span class="steps__item-number"></span>
+							<p class="steps__item-text">После подписания мы приступаем к строительству коттеджа. Мы предоставляем видеоотчеты, благодаря чему вы сможете следить за каждым шагом в строительстве, даже если не сможете присутствовать на стройке ежедневно</p>
+						</div>
+					</li>
+					<li class="steps__item col-md-6 col-lg-4">
+						<div class="steps__item-box">
+							<span class="steps__item-number"></span>
+							<p class="steps__item-text">По Вашему желанию можем сделать всё под ключ вместе с дизайном внутренних интерьеров и чистовой отделкой коттеджа. Поэтапная оплата. </p>
+						</div>
+					</li>
+					<li class="steps__item col-md-6 col-lg-4">
+						<div class="steps__item-box">
+							<span class="steps__item-number"></span>
+							<p class="steps__item-text">Вы счастливый обладатель уютного коттеджа и участка в закрытом клубе бизнес-класса «Аянский»</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="consult">
+			<div class="container">
+				<div class="consult__box">
+					<div class="consult__content">
+						<p class="consult__title h2">Получите <span>бесплатную</span> консультацию</p>
+						<p class="consult__desc">
+							по всем вопросам, связанным <br>
+							с оформлением участка <br>
+							и строительством коттеджа <br>
+							в квартале «Аянский»
+						</p>
+					</div>
+					<form class="form">
+						<p class="form__title">Наши специалисты ответят<br> на все юридические, организационные<br> и технические вопросы</p>
+						<input type="text" class="form__input input input--name" placeholder="Имя">
+						<input type="tel" class="form__input input input--tel" placeholder="Телефон">
+						<input type="submit" class="form__button button" value="Получить консультацию">
+						<div class="form__checkbox-wrap">
+							<span class="wpcf7-form-control-wrap your-consent"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="your-consent" value="1" aria-invalid="false" checked="checked"><span class="wpcf7-list-item-label">Согласие на обработку персональных данных</span></label></span></span></span>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section id="about" class="about">
+			<div class="container">
+				<p class="about__title h2">О застройщике</p>
+				<div class="about__row row">
+					<div class="col-lg-4">
+						<div class="about__director">
+							<div class="about__director-img-box">
+								<img src="img/about-director.jpg" alt="">
+							</div>
+							<p class="about__director-title">Михеев<br> Александр Сергеевич</p>
+							<p class="about__director-desc">Директор ООО «Бм-Билд»,<br> эксперт в области строительства<br> коттеджных поселков и многоэтажных домов</p>
+						</div>
+					</div>
+					<div class="col-lg-8">
+						<div class="about__projects">
+							<p class="about__projects-title">Участие в крупных строительных проектах в Крыму:</p>
+							<ul class="about__projects-list row">
+								<li class="about__projects-item col-md-6">Строительство многоэтажного дома в ЖК «Таврический» (ГК Монолит)</li>
+								<li class="about__projects-item col-md-6">Строительство многоэтажного дома в ЖК «Радуга» (ГК Монолит)</li>
+								<li class="about__projects-item col-md-6">Строительство многоэтажного дома в ЖК «Город Мира» (СК Карбон)</li>
+							</ul>
+						</div>
+						<div class="about__certificates">
+							<ul class="about__certificates-list">
+								<li class="about__certificates-item">
+									<a href="img/about-certificate.jpg" class="about__certificates-item-box fancybox">
+										<img src="img/about-certificate.jpg" alt="">
+									</a>
+								</li>
+								<li class="about__certificates-item">
+									<a href="img/about-certificate.jpg" class="about__certificates-item-box fancybox">
+										<img src="img/about-certificate.jpg" alt="">
+									</a>
+								</li>
+								<li class="about__certificates-item">
+									<a href="img/about-certificate.jpg" class="about__certificates-item-box fancybox">
+										<img src="img/about-certificate.jpg" alt="">
+									</a>
+								</li>
+								<li class="about__certificates-item">
+									<a href="img/about-certificate.jpg" class="about__certificates-item-box fancybox">
+										<img src="img/about-certificate.jpg" alt="">
+									</a>
+								</li>
+							</ul>
+							<button class="about__certificates-prev">
+								<svg class="svg-arrow-left">
+									<use xlink:href="#svg-arrow-left"></use>
+								</svg>
+							</button>
+							<button class="about__certificates-next">
+								<svg class="svg-arrow-right">
+									<use xlink:href="#svg-arrow-right"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer id="footer" class="footer">
+		<div class="footer__main">
+			<div id="map" class="footer__map"></div>
+			<div class="container">
+				<div class="row justify-content-end">
+					<div class="col-lg-6">
+						<div class="footer__box">
+							<div class="footer__head">
+								<div class="footer__logo">
+									<img src="img/logo.svg" alt="">
+								</div>
+								<p class="footer__title">Клубный коттеджный квартал в с. Заречное (пригород Симферополя)</p>
+							</div>
+							<p class="footer__text">
+								<b>Офис:</b> г. Симферополь, ул. Севастопольская, 123 <br>
+								<b>E-mail:</b> <a href="mailto:" rel="nofollow">joffice@ayansky.ru</a>
+							</p>
+							<p class="footer__text">
+								<b>Координаты участков:</b><br>
+								44° 31' 8.01" N 34° 13' 41.70" E
+							</p>
+							<p class="footer__tel"><a href="tel:+79781234567" rel="nofollow">+7 (978) 123 45 67</a></p>
+							<p class="footer__tel-time">Пн-Сб 9:00-19:00</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__bottom-container container">
+				<p class="footer__policy"><a href="#">Политика конфиденциальности</a></p>
+				<p class="footer__copyright">г. Симферополь © Copyright  2020 г.</p>
+				<p class="footer__madein">Сделано в <a href="#" target="_blank" rel="nofollow"><img height="22" src="img/sheer.svg" alt=""></a></p>
+			</div>
+		</div>
+	</footer>
+
+	<div class="scroll-top"><span><i class="fas fa-arrow-up"></i></span></div>
+
+	<div style="display: none">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<symbol id="svg-arrow-left" viewBox="0 0 24 24">
+				<polygon points="19.3,12.4 0.5,12.4 0.5,10.4 19.3,10.4 14,5 15.4,3.6 23.2,11.4 15.4,19.1 14,17.7 "/>
+			</symbol>
+
+			<symbol id="svg-arrow-right" viewBox="0 0 24 24">
+				<polygon points="19.3,12.4 0.5,12.4 0.5,10.4 19.3,10.4 14,5 15.4,3.6 23.2,11.4 15.4,19.1 14,17.7 "/>
+			</symbol>
+		</svg>
+	</div>
+
+	<script src="libs/jquery/dist/jquery.min.js"></script>
+	<script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
+	<script src="libs/fancybox-2.1.7/source/jquery.fancybox.js"></script>
+	<script src="libs/fancybox-2.1.7/source/helpers/jquery.fancybox-media.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="js/common.js"></script>
+
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=bee5a468-d693-4038-a644-44be6dee59f0&lang=ru_RU" type="text/javascript"></script>
+	<script>
+		ymaps.ready(init);
+		function init(){
+			var location = [44.848393, 34.291901];
+			var myMap = new ymaps.Map(
+				"map", 
+				{
+					center: location,
+					zoom: 15,
+					controls: ['zoomControl', 'geolocationControl']
+				}
+			);
+			myMap.behaviors.disable('scrollZoom');
+		}
+	</script>
+</body>
+</html>

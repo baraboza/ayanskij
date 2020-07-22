@@ -1,0 +1,133 @@
+.advants {
+	margin-top: 90px;
+
+	&__title {
+		margin-bottom: 40px;
+	}
+
+	&__item {
+		margin-top: 30px;
+		display: flex;
+
+		&::before {
+			content: '';
+			@include circle(40px);
+			flex-shrink: 0;
+			margin-right: 30px;
+			background-image:  
+				url('../img/check-mark.svg'),
+				linear-gradient(to bottom, #87bc44, #628d2c);
+			background-repeat: no-repeat;
+			background-size: 17px, 100% 100%;
+			background-position: center center;
+			box-shadow:
+				inset 0 0 13px rgba(#fff, 0.2),
+				0 15px 20px rgba(#648c30, 0.4);
+			transition: 0.3s;
+		}
+
+		&:hover {
+			
+			&::before {
+				transform: scale(1.22);
+			}
+		}
+	}
+
+	&__item-text {
+		font-size: 14px;
+		line-height: 21px;
+		padding-right: 40px;
+	}
+
+	&__slider {
+		margin-top: 50px;
+	}
+
+	&__slider-list {
+		margin-left: -15px;
+		margin-right: -15px;
+
+		.slick-list {
+			margin: -30px -15px -50px;
+			padding: 30px 15px 50px;
+		}
+
+		.slick-dots {
+			position: absolute;
+			bottom: 0;
+			left: 50px;
+			right: 50px;
+			display: flex;
+			justify-content: center;
+			z-index: 1;
+
+			li {
+				margin: 0 10px;
+			}
+
+			button {
+				font-size: 0;
+				border: none;
+				background: #87bc44;
+				padding: 0;
+				@include circle(10px);
+			}
+
+			.slick-active {
+
+				button {
+					background-color: #5466bd;
+				}
+			}
+		}
+	}
+
+	&__slider-item {
+		padding-left: 15px;
+		padding-right: 15px;
+
+		img {
+			display: block;
+			@include cover;
+			border-radius: 8px;
+			transition: box-shadow 0.3s;
+		}
+
+		&.slick-active {
+
+			img {
+				box-shadow: 0 24px 38px -10px rgba(#939598, 0.63);
+			}
+		}
+	}
+
+	&__controls {
+		margin-top: 28px;
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+	}
+
+	&__prev, &__next {
+		border: none;
+		background: none;
+		padding: 0;
+		@include hover-opacity;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.advants {
+		margin-top: 50px;
+
+		&__title {
+			text-align: center;
+			margin-bottom: 0;
+		}
+
+		&__item-text {
+			padding-right: 0;
+		}
+	}
+}

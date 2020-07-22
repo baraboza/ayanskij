@@ -1,0 +1,190 @@
+.choice {
+	background-color: #d9e7c5;
+	padding-top: 50px;
+	padding-bottom: 90px;
+
+	&__title {
+		text-align: center;
+	}
+
+	&__box {
+		margin-top: 45px;
+		border-radius: 8px;
+		box-shadow: 0 24px 38px rgba(#939598, 0.63);
+		position: relative;
+	}
+
+	&__image {
+		width: 100%;
+		border-radius: 8px;
+	}
+
+	&__list {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	&__item {
+		position: absolute;
+		transform: translate(-50%, -100%);
+
+		&:hover {
+			z-index: 1;
+
+			.choice {
+				&__number {
+					transform: scale(1.2);
+				}
+
+				&__info {
+					opacity: 1;
+				}
+			}
+		}
+
+		&:nth-child(1) {
+			top: 24.41%;
+			left: 19.74%;
+		}
+
+		&:nth-child(2) {
+			top: 24.41%;
+			left: 39.21%;
+		}
+
+		&:nth-child(3) {
+			top: 24.41%;
+			left: 58.6%;
+		}
+
+		&:nth-child(4) {
+			top: 24.41%;
+			left: 77.02%;
+		}
+
+		&:nth-child(5) {
+			top: 47.66%;
+			left: 15.79%;
+		}
+
+		&:nth-child(6) {
+			top: 47.66%;
+			left: 38.33%;
+		}
+
+		&:nth-child(7) {
+			top: 47.66%;
+			left: 59.82%;
+		}
+
+		&:nth-child(8) {
+			top: 47.66%;
+			left: 81.58%;
+		}
+	}
+
+	&__item-box {
+		display: block;
+	}
+
+	&__number {
+		@include flex-center;
+		color: #fff;
+		font-size: 24px;
+		font-weight: 700;
+		width: 67px;
+		height: 75px;
+		padding-bottom: 8px;
+		background-image: url('../img/location.svg');
+		background-size: 100% 100%;
+		transform-origin: 50% 100%;
+		position: relative;
+		z-index: 1;
+		transition: transform 0.3s;
+	}
+
+	&__info {
+		position: absolute;
+		width: 200px;
+		bottom: 0;
+		right: 50%;
+		overflow: hidden;
+		opacity: 0;
+		background-color: #fff;
+		border-radius: 10px;
+		padding: 10px;
+		padding-right: 40px;
+		font-size: 14px;
+		pointer-events: none;
+		transition: 0.3s;
+	}
+
+	&__info-title {
+		font-size: 16px;
+		margin-bottom: 5px;
+		font-weight: 500;
+	}
+
+	&__info-text {
+		line-height: 18px;
+	}
+
+	&__status {
+		font-size: 16px;
+		font-weight: 500;
+		margin-top: 5px;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.choice {
+
+		&__info {
+			display: none;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.choice {
+		padding-bottom: 50px;
+
+		&__image {
+			display: none;
+		}
+
+		&__box {
+			box-shadow: none;
+		}
+
+		&__list {
+			position: static;
+		}
+
+		&__item {
+			position: static;
+			transform: none;
+			margin-bottom: 20px;
+		}
+
+		&__item-box {
+			display: flex;
+		}
+
+		&__number {
+			flex-shrink: 0;
+		}
+
+		&__info {
+			display: block;
+			opacity: 1;
+			position: static;
+			margin-left: 10px;
+			width: auto;
+			flex-grow: 1;
+		}
+	}
+}
