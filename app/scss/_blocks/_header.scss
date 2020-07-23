@@ -123,6 +123,7 @@
 
 		&__main {
 			background-color: #fff;
+			border-bottom: 1px solid #2a3b8a;
 		}
 
 		&__title {
@@ -136,7 +137,7 @@
 		&__toggle {
 			display: block;
 			position: relative;
-			margin-left: 50px;
+			margin-left: 30px;
 			width: 30px;
 			height: 20px;
 			flex-direction: column;
@@ -213,15 +214,12 @@
 			width: 100px;
 		}
 
-		&__title, &__tel-text, &__tel-time {
+		&__title, &__tel-circle, &__tel-time {
 			display: none;
 		}
 
-		&__tel-circle {
-			position: static;
-			width: 40px;
-			height: 40px;
-			margin-top: 0;
+		&__tel-text {
+			font-size: 14px;
 		}
 	}
 }

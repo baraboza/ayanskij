@@ -22,6 +22,10 @@ img {
 a {
 	color: inherit;
 	text-decoration: none;
+
+	&:focus {
+		outline: none;
+	}
 }
 
 b, strong {

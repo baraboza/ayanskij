@@ -12,11 +12,11 @@ $('.js-modal-open').click(function(e) {
 
 $('.modal__close').click(function() {
 	$('body').removeClass('overflow-hidden');
-	$(this).parents('.modal-wrapper').fadeOut();
+	$(this).parents('.modal').fadeOut();
 });
 
-$('.modal-wrapper').click(function(e) {
-	let modal = $(this).find('.modal');
+$('.modal').click(function(e) {
+	let modal = $(this).find('.modal__box');
 	if (modal.is(e.target) || modal.has(e.target).length > 0) return;
 	$('body').removeClass('overflow-hidden');
 	$(this).fadeOut();
@@ -26,6 +26,7 @@ $('.tabs__content').hide();
 $('.tabs__content:first').show();
 $('.tabs__list li:first').addClass('active');
 $('.tabs__list li').click(function(event) {
+	event.preventDefault();
 	let parent = $(this).parents('.tabs');
 	parent.find('.tabs__list li').removeClass('active');
 	$(this).addClass('active');

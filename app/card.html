@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" type="image/png" href="img/favicon/favicon.png">
+	<meta name="theme-color" content="#000">
+	<link rel="stylesheet" href="fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="libs/fancybox-2.1.7/source/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/main.min.css?v=1">
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__wrap">
+			<div class="header__main">
+				<div class="header__container">
+					<div class="header__main-row">
+						<a href="#" class="header__logo">
+							<img src="img/logo.svg" alt="">
+						</a>
+						<p class="header__title">
+							Клубный коттеджный квартал в с. Заречное<br> 
+							(пригород Симферополя)
+						</p>
+						<p class="header__contacts">
+							Офис: г. Симферополь, ул. Севастопольская, 123 <br>
+							E-mail: joffice@ayansky.ru
+						</p>
+						<p class="header__coords">
+							Координаты участков: <br> 
+							44° 31' 8.01" N 34° 13' 41.70" E
+						</p>
+						<div class="header__tel-wrap">
+							<a href="tel:+79781234567" class="header__tel">
+								<span class="header__tel-circle"><i class="fas fa-phone-alt"></i></span>
+								<span class="header__tel-text">+7 (978) 123 45 67</span>
+							</a>
+							<p class="header__tel-time">Пн-Сб 9:00-19:00</p>
+						</div>
+						<div class="header__toggle">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__nav">
+				<div class="header__container">
+					<ul class="header__nav-list">
+						<li class="header__nav-item"><a href="#about" class="js-scroll-link">О застройщике</a></li>
+						<li class="header__nav-item"><a href="#choice" class="js-scroll-link">Выбор коттеджа</a></li>
+						<li class="header__nav-item"><a href="#tech" class="js-scroll-link">Технологии строительства</a></li>
+						<li class="header__nav-item"><a href="#location" class="js-scroll-link">Расположение</a></li>
+						<li class="header__nav-item"><a href="#projects" class="js-scroll-link">Оформление интерьеров</a></li>
+						<li class="header__nav-item"><a href="#steps" class="js-scroll-link">Как купить коттедж</a></li>
+						<li class="header__nav-item"><a href="#footer" class="js-scroll-link">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="card-main">
+			<div class="container">
+				<div class="card-main__box">
+					<div class="card-main__row row">
+						<div class="col-lg-7">
+							<div class="card-main__img-box">
+								<img src="img/card-main.jpg" alt="">
+							</div>
+						</div>
+						<div class="col-lg-5">
+							<form class="card-main__content">
+								<h1 class="card-main__title">Коттедж №1: левая сторона</h1>
+								<ul class="card-main__list">
+									<li class="card-main__item">
+										<span class="card-main__item-title">Общая площадь участка:</span>
+										<span class="card-main__item-value">8,08 соток</span>
+									</li>
+									<li class="card-main__item">
+										<span class="card-main__item-title">Площадь коттеджа:</span>
+										<span class="card-main__item-value">от 150 до 260 м2</span>
+									</li>
+								</ul>
+								<p class="card-main__options-title">Варианты фасадов:</p>
+								<ul class="card-main__options-list">
+									<li class="card-main__options-item">
+										<label class="card-main__option-label">
+											<input type="radio" name="radio" class="card-main__option-input" checked>
+											<span class="card-main__option-checkbox"></span>
+											<span class="card-main__option-text">Термодерево и клинкерный кирпич</span>
+										</label>
+									</li>
+									<li class="card-main__options-item">
+										<label class="card-main__option-label">
+											<input type="radio" name="radio" class="card-main__option-input">
+											<span class="card-main__option-checkbox"></span>
+											<span class="card-main__option-text">Декоративная акриловая штукатурка и фасадная сосна</span>
+										</label>
+									</li>
+								</ul>
+								<p class="card-main__price">
+									Стоимость вместе с участком от <br>
+									<b>13 000 000 ₽</b>
+								</p>
+								<div class="card-main__input-wrap">
+									<input type="tel" class="card-main__input input input--tel" placeholder="Телефон">
+									<input type="submit" class="card-main__button button" value="Хочу такой коттедж">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="card-info tabs">
+			<div class="container">
+				<ul class="card-info__tabs-list tabs__list">
+					<li><a href="#tab1">Общее описание коттеджа</a></li>
+					<li><a href="#tab2">Варианты планировок</a></li>
+					<li><a href="#tab3">Условия приобретения</a></li>
+				</ul>
+				<div class="card-info__tabs-container tabs__container">
+					<div id="tab1" class="card-info__content tabs__content">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="card-info__content-left article">
+									<h2>Описание участка:</h2>
+									<p>Но некоторые особенности внутренней политики, инициированные исключительно синтетически, ограничены исключительно образом мышления. Как принято считать, реплицированные с зарубежных источников, современные исследования будут заблокированы в рамках своих собственных рациональных ограничений. </p>
+									<h2>Первый этаж:</h2>
+									<p>Являясь всего лишь частью общей картины, представители современных социальных резервов представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности</p>
+									<h2>Второй этаж:</h2>
+									<p>Являясь всего лишь частью общей картины, представители современных социальных резервов представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности</p>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="card-info__content-right article">
+									<h2>Отопление:</h2>
+									<br>
+									<br>
+									<h2>Вентиляция и кондиционирование:</h2>
+									<br>
+									<br>
+									<h2>Вода и канализация:</h2>
+									<br>
+									<br>
+									<h2>Электроснабжение:</h2>
+									<br>
+									<br>
+									<h2>Интернет и телекоммуникации:</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="tab2" class="card-info__content tabs__content">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="card-info__content-left article">
+									<h2>2 Описание участка:</h2>
+									<p>Но некоторые особенности внутренней политики, инициированные исключительно синтетически, ограничены исключительно образом мышления. Как принято считать, реплицированные с зарубежных источников, современные исследования будут заблокированы в рамках своих собственных рациональных ограничений. </p>
+									<h2>Первый этаж:</h2>
+									<p>Являясь всего лишь частью общей картины, представители современных социальных резервов представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности</p>
+									<h2>Второй этаж:</h2>
+									<p>Являясь всего лишь частью общей картины, представители современных социальных резервов представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности</p>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="card-info__content-right article">
+									<h2>Отопление:</h2>
+									<br>
+									<br>
+									<h2>Вентиляция и кондиционирование:</h2>
+									<br>
+									<br>
+									<h2>Вода и канализация:</h2>
+									<br>
+									<br>
+									<h2>Электроснабжение:</h2>
+									<br>
+									<br>
+									<h2>Интернет и телекоммуникации:</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="tab3" class="card-info__content tabs__content">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="card-info__content-left article">
+									<h2>3 Описание участка:</h2>
+									<p>Но некоторые особенности внутренней политики, инициированные исключительно синтетически, ограничены исключительно образом мышления. Как принято считать, реплицированные с зарубежных источников, современные исследования будут заблокированы в рамках своих собственных рациональных ограничений. </p>
+									<h2>Первый этаж:</h2>
+									<p>Являясь всего лишь частью общей картины, представители современных социальных резервов представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности</p>
+									<h2>Второй этаж:</h2>
+									<p>Являясь всего лишь частью общей картины, представители современных социальных резервов представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности</p>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="card-info__content-right article">
+									<h2>Отопление:</h2>
+									<br>
+									<br>
+									<h2>Вентиляция и кондиционирование:</h2>
+									<br>
+									<br>
+									<h2>Вода и канализация:</h2>
+									<br>
+									<br>
+									<h2>Электроснабжение:</h2>
+									<br>
+									<br>
+									<h2>Интернет и телекоммуникации:</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer id="footer" class="footer">
+		<div class="footer__main">
+			<div id="map" class="footer__map"></div>
+			<div class="container">
+				<div class="row justify-content-end">
+					<div class="col-lg-6">
+						<div class="footer__box">
+							<div class="footer__head">
+								<div class="footer__logo">
+									<img src="img/logo.svg" alt="">
+								</div>
+								<p class="footer__title">Клубный коттеджный квартал в с. Заречное (пригород Симферополя)</p>
+							</div>
+							<p class="footer__text">
+								<b>Офис:</b> г. Симферополь, ул. Севастопольская, 123 <br>
+								<b>E-mail:</b> <a href="mailto:" rel="nofollow">joffice@ayansky.ru</a>
+							</p>
+							<p class="footer__text">
+								<b>Координаты участков:</b><br>
+								44° 31' 8.01" N 34° 13' 41.70" E
+							</p>
+							<p class="footer__tel"><a href="tel:+79781234567" rel="nofollow">+7 (978) 123 45 67</a></p>
+							<p class="footer__tel-time">Пн-Сб 9:00-19:00</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__bottom-container container">
+				<p class="footer__policy"><a href="#">Политика конфиденциальности</a></p>
+				<p class="footer__copyright">г. Симферополь © Copyright  2020 г.</p>
+				<p class="footer__madein">Сделано в <a href="#" target="_blank" rel="nofollow"><img height="22" src="img/sheer.svg" alt=""></a></p>
+			</div>
+		</div>
+	</footer>
+
+	<div id="modal-callback" class="modal">
+		<div class="modal__container">
+			<div class="modal__box">
+				<span class="modal__close"><i class="fas fa-times"></i></span>
+				<form class="form">
+					<p class="form__title">Заполните форму</p>
+					<p class="form__desc">Наши специалисты свяжутся с Вами в ближайшее время</p>
+					<input type="text" class="form__input input input--name" placeholder="Имя">
+					<input type="tel" class="form__input input input--tel" placeholder="Телефон">
+					<input type="submit" class="form__button button" value="Отправить">
+					<div class="form__checkbox-wrap">
+						<span class="wpcf7-form-control-wrap your-consent"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="your-consent" value="1" aria-invalid="false" checked="checked"><span class="wpcf7-list-item-label">Согласие на обработку персональных данных</span></label></span></span></span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="scroll-top"><span><i class="fas fa-arrow-up"></i></span></div>
+
+	<div style="display: none">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<symbol id="svg-arrow-left" viewBox="0 0 24 24">
+				<polygon points="19.3,12.4 0.5,12.4 0.5,10.4 19.3,10.4 14,5 15.4,3.6 23.2,11.4 15.4,19.1 14,17.7 "/>
+			</symbol>
+
+			<symbol id="svg-arrow-right" viewBox="0 0 24 24">
+				<polygon points="19.3,12.4 0.5,12.4 0.5,10.4 19.3,10.4 14,5 15.4,3.6 23.2,11.4 15.4,19.1 14,17.7 "/>
+			</symbol>
+		</svg>
+	</div>
+
+	<script src="libs/jquery/dist/jquery.min.js"></script>
+	<script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
+	<script src="libs/fancybox-2.1.7/source/jquery.fancybox.js"></script>
+	<script src="libs/fancybox-2.1.7/source/helpers/jquery.fancybox-media.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="js/common.js?v=1"></script>
+
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=bee5a468-d693-4038-a644-44be6dee59f0&lang=ru_RU" type="text/javascript"></script>
+	<script>
+		ymaps.ready(init);
+		function init(){
+			var location = [44.848393, 34.291901];
+			var myMap = new ymaps.Map(
+				"map", 
+				{
+					center: location,
+					zoom: 15,
+					controls: ['zoomControl', 'geolocationControl']
+				}
+			);
+			myMap.behaviors.disable('scrollZoom');
+		}
+	</script>
+</body>
+</html>

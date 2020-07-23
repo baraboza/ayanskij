@@ -12,7 +12,7 @@
 	<meta name="theme-color" content="#000">
 	<link rel="stylesheet" href="fontawesome/css/all.min.css">
 	<link rel="stylesheet" href="libs/fancybox-2.1.7/source/jquery.fancybox.css">
-	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/main.min.css?v=1">
 </head>
 
 <body>
@@ -74,7 +74,7 @@
 				<p class="hero__title">Строим уникальную недвижимость в Крыму - коттеджи бизнес-класса в Салгирской долине</p>
 				<p class="hero__desc">Участки под застройку: ИЖС, 8 соток со всеми проведенными коммуникациями, рядом с Аянским водохранилищем</p>
 				<p class="hero__note">Проводим выездные экскурсии для потенциальных клиентов. Это бесплатно и интересно</p>
-				<a href="#" class="hero__button button">Записаться на просмотр участка<br> и выбор коттеджа</a>
+				<a href="#modal-callback" class="hero__button button js-modal-open">Записаться на просмотр участка<br> и выбор коттеджа</a>
 				<div class="hero__scroll-wrap">
 					<p class="hero__scroll">
 						<span>Скролльте</span>
@@ -113,6 +113,19 @@
 		</section>
 
 		<section id="choice" class="choice">
+			<div class="choice__mobile-box">
+				<img src="img/choice-image.jpg" alt="" class="choice__mobile-image">
+				<ul class="choice__mobile-list">
+					<li class="choice__mobile-item">01</li>
+					<li class="choice__mobile-item choice__mobile-item--red">02</li>
+					<li class="choice__mobile-item choice__mobile-item--yellow">03</li>
+					<li class="choice__mobile-item">04</li>
+					<li class="choice__mobile-item">05</li>
+					<li class="choice__mobile-item">06</li>
+					<li class="choice__mobile-item">07</li>
+					<li class="choice__mobile-item">08</li>
+				</ul>
+			</div>
 			<div class="container">
 				<p class="choice__title h2">Выбор участка и коттеджа</p>
 				<div class="choice__box">
@@ -134,7 +147,7 @@
 						</li>
 						<li class="choice__item">
 							<a href="#" class="choice__item-box">
-								<span class="choice__number">02</span>
+								<span class="choice__number choice__number--red">02</span>
 								<div class="choice__info">
 									<p class="choice__info-title">Коттедж №2</p>
 									<p class="choice__status">Продано</p>
@@ -143,7 +156,7 @@
 						</li>
 						<li class="choice__item">
 							<a href="#" class="choice__item-box">
-								<span class="choice__number">03</span>
+								<span class="choice__number choice__number--yellow">03</span>
 								<div class="choice__info">
 									<p class="choice__info-title">Коттедж №3</p>
 									<p class="choice__info-text">
@@ -612,6 +625,24 @@
 		</div>
 	</footer>
 
+	<div id="modal-callback" class="modal">
+		<div class="modal__container">
+			<div class="modal__box">
+				<span class="modal__close"><i class="fas fa-times"></i></span>
+				<form class="form">
+					<p class="form__title">Заполните форму</p>
+					<p class="form__desc">Наши специалисты свяжутся с Вами в ближайшее время</p>
+					<input type="text" class="form__input input input--name" placeholder="Имя">
+					<input type="tel" class="form__input input input--tel" placeholder="Телефон">
+					<input type="submit" class="form__button button" value="Отправить">
+					<div class="form__checkbox-wrap">
+						<span class="wpcf7-form-control-wrap your-consent"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="your-consent" value="1" aria-invalid="false" checked="checked"><span class="wpcf7-list-item-label">Согласие на обработку персональных данных</span></label></span></span></span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
 	<div class="scroll-top"><span><i class="fas fa-arrow-up"></i></span></div>
 
 	<div style="display: none">
@@ -631,7 +662,7 @@
 	<script src="libs/fancybox-2.1.7/source/jquery.fancybox.js"></script>
 	<script src="libs/fancybox-2.1.7/source/helpers/jquery.fancybox-media.js"></script>
 	<script src="libs/slick/slick.min.js"></script>
-	<script src="js/common.js"></script>
+	<script src="js/common.js?v=1"></script>
 
 	<script src="https://api-maps.yandex.ru/2.1/?apikey=bee5a468-d693-4038-a644-44be6dee59f0&lang=ru_RU" type="text/javascript"></script>
 	<script>

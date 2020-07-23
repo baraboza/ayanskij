@@ -1,4 +1,13 @@
 .article {
+	font-size: 14px;
+	line-height: 21px;
+
+	img, p, ul, ol, li {
+		
+		&:nth-child(n + 2) {
+			margin-top: 10px;
+		}
+	}
 
 	img {
 
@@ -9,6 +18,8 @@
 	}
 
 	ul {
+		list-style-type: disc;
+		padding-left: 15px;
 
 		> li {
 
@@ -16,6 +27,8 @@
 	}
 
 	ol {
+		padding-left: 15px;
+		list-style-type: decimal;
 
 		> li {
 
@@ -31,23 +44,27 @@
 	}
 
 	h2 {
-
+		font-size: 16px;
+		
+		&:nth-child(n + 2) {
+			margin-top: 40px;
+		}
 	}
 
 	h3 {
-
+		
 	}
 
 	h4 {
-
+		
 	}
 
 	h5 {
-
+		
 	}
 
 	h6 {
-
+		
 	}
 
 	strong, b {
@@ -56,5 +73,17 @@
 
 	em, i {
 		font-style: italic;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.article {
+
+		h2 {
+
+			&:nth-child(n + 2) {
+				margin-top: 25px;
+			}
+		}
 	}
 }

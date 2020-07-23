@@ -30,6 +30,11 @@
 		padding-top: 240px;
 		@extend .container;
 		max-width: 1360px;
+		height: 100vh;
+		min-height: 700px;
+		padding-bottom: 40px;
+		display: flex;
+		flex-direction: column;
 	}
 
 	&__title {
@@ -62,6 +67,7 @@
 		max-width: 323px;
 		min-height: 89px;
 		font-size: 15px;
+		margin-bottom: auto;
 	}
 
 	&__scroll {
@@ -90,6 +96,10 @@
 @include media-breakpoint-down(sm) {
 	.hero {
 		height: 1200px;
+
+		&__bg {
+			background-position: top right;
+		}
 
 		&__content {
 			padding-top: 100px;

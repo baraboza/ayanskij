@@ -6,7 +6,7 @@
 	right: 0;
 	bottom: 0;
 	overflow: auto;
-	background: rgba(0,0,0,0.7);
+	background: rgba(0,0,0,0.6);
 	z-index: 10;
 
 	&__container {
@@ -14,5 +14,98 @@
 		justify-content: center;
 		align-items: center;
 		min-height: 100%;
+	}
+
+	&__box {
+		width: 793px;
+		background-image: repeating-linear-gradient(135deg,rgba(#98a28a, 0.3),rgba(#98a28a, 0.3) 2px,rgba(#fff, 0.3) 2px,rgba(#fff, 0.3) 7px);
+		background-size: 10px 10px;
+		border-radius: 6px;
+		position: relative;
+		box-shadow: 0 12px 25px rgba(#719a3d, 0.3);
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 7px;
+			left: 7px;
+			right: 7px;
+			bottom: 7px;
+			background-image: url('../img/modal-bg.jpg');
+			background-size: cover;
+			background-position: center center;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: -49px;
+			left: 310px;
+			width: 170px;
+			height: 117px;
+			background-image: url('../img/modal-leaf.png');
+		}
+	}
+
+	&__close {
+		position: absolute;
+		top: 13px;
+		right: 14px;
+		cursor: pointer;
+		color: #5266bb;
+		font-size: 18px;
+		@include hover-opacity;
+		z-index: 2;
+	}
+
+	.form {
+		max-width: 390px;
+		margin-left: auto;
+		position: relative;
+		z-index: 1;
+		padding-top: 45px;
+		padding-bottom: 40px;
+
+		&__title {
+			font-size: 24px;
+			font-weight: 500;
+			margin-bottom: 18px;
+		}
+
+		&__desc {
+			line-height: 24px;
+			margin-bottom: 30px;
+		}
+
+		&__button {
+			margin-top: 20px;
+			min-height: 68px;
+		}
+
+		&__checkbox-wrap {
+			margin-top: 34px;
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.modal {
+
+		&__box {
+			width: auto;
+			background: none;
+
+			&::before, &::after {
+				display: none;
+			}
+		}
+
+		.form {
+			text-align: center;
+
+			&__button {
+				max-width: none;
+			}
+		}
 	}
 }

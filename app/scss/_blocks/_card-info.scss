@@ -1,0 +1,92 @@
+.card-info {
+	margin-top: 46px;
+	margin-bottom: 56px;
+
+	&__tabs-list {
+		display: flex;
+		margin-left: -15px;
+		font-size: 14px;
+		font-weight: 500;
+
+		li {
+			margin-left: 15px;
+		}
+
+		a {
+			@include flex-center;
+			padding: 10px;
+			text-align: center;
+			width: 260px;
+			height: 70px;
+			background-color: #5266bb;
+			color: #fff;
+			border-radius: 0 30px 0 30px;
+			transition: 0.2s;
+
+			&:hover {
+				border-radius: 0;
+			}
+		}
+
+		.active a {
+			background-color: #d9e7c5;
+			color: #2c3438;
+		}
+	}
+
+	&__tabs-container {
+		margin-top: 16px;
+	}
+
+	&__content {
+		padding: 30px 38px 40px;
+		background-color: #fff;
+		box-shadow: 0 12px 25px rgba(#719a3d, 0.2);
+	}
+
+	&__content-right {
+		padding-left: 70px;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.card-info {
+
+		&__tabs-list {
+			flex-direction: column;
+
+			li {
+				margin-top: 10px;
+			}
+
+			a {
+				width: 100%;
+			}
+		}
+
+		&__content-right {
+			padding-left: 0;
+			margin-top: 40px;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.card-info {
+
+		&__tabs-list {
+
+			li {
+				margin-top: 5px;
+			}
+
+			a {
+				height: 50px;
+			}
+		}
+
+		&__content {
+			padding: 15px;
+		}
+	}
+}
