@@ -25,6 +25,7 @@
 		height: 100%;
 
 		img {
+			display: none;
 			@include cover;
 			border-radius: 8px;
 		}
@@ -126,6 +127,7 @@
 		line-height: 36px;
 
 		b {
+			display: none;
 			font-size: 30px;
 			font-weight: 700;
 			color: #5266bb;

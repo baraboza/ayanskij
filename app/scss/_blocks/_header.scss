@@ -35,6 +35,10 @@
 
 	&__contacts {
 		margin-left: 150px;
+
+		a {
+			@include hover-opacity;
+		}
 	}
 
 	&__coords {

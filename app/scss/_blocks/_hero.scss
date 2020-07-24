@@ -31,7 +31,7 @@
 		@extend .container;
 		max-width: 1360px;
 		height: 100vh;
-		min-height: 700px;
+		min-height: 600px;
 		padding-bottom: 40px;
 		display: flex;
 		flex-direction: column;
@@ -84,6 +84,36 @@
 	}
 }
 
+@media (max-width: 1600px) {
+	.hero {
+
+		&__content {
+			padding-top: 200px;
+		}
+
+		&__title {
+			font-size: 35px;
+			line-height: 45px;
+			max-width: none;
+		}
+
+		&__desc {
+			margin-top: 20px;
+			font-size: 18px;
+			line-height: 24px;
+			max-width: none;
+		}
+
+		&__note {
+			margin-top: 20px;
+		}
+
+		&__button {
+			margin-top: 20px;
+		}
+	}
+}
+
 @include media-breakpoint-down(lg) {
 	.hero {
 
@@ -108,12 +138,6 @@
 		&__title {
 			font-size: 24px;
 			line-height: 30px;
-		}
-
-		&__desc {
-			margin-top: 20px;
-			font-size: 18px;
-			line-height: 24px;
 		}
 
 		&__note {

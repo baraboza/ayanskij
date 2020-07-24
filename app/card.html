@@ -12,7 +12,7 @@
 	<meta name="theme-color" content="#000">
 	<link rel="stylesheet" href="fontawesome/css/all.min.css">
 	<link rel="stylesheet" href="libs/fancybox-2.1.7/source/jquery.fancybox.css">
-	<link rel="stylesheet" href="css/main.min.css?v=1">
+	<link rel="stylesheet" href="css/main.min.css?v=2">
 </head>
 
 <body>
@@ -30,7 +30,7 @@
 						</p>
 						<p class="header__contacts">
 							Офис: г. Симферополь, ул. Севастопольская, 123 <br>
-							E-mail: joffice@ayansky.ru
+							E-mail: <a href="mailto:joffice@ayansky.ru">joffice@ayansky.ru</a>
 						</p>
 						<p class="header__coords">
 							Координаты участков: <br> 
@@ -74,7 +74,8 @@
 					<div class="card-main__row row">
 						<div class="col-lg-7">
 							<div class="card-main__img-box">
-								<img src="img/card-main.jpg" alt="">
+								<img src="img/card-main.jpg" alt="" data-index="1">
+								<img src="img/card-main-2.jpg" alt="" data-index="1">
 							</div>
 						</div>
 						<div class="col-lg-5">
@@ -94,14 +95,14 @@
 								<ul class="card-main__options-list">
 									<li class="card-main__options-item">
 										<label class="card-main__option-label">
-											<input type="radio" name="radio" class="card-main__option-input" checked>
+											<input type="radio" name="radio" class="card-main__option-input" checked data-index="0">
 											<span class="card-main__option-checkbox"></span>
 											<span class="card-main__option-text">Термодерево и клинкерный кирпич</span>
 										</label>
 									</li>
 									<li class="card-main__options-item">
 										<label class="card-main__option-label">
-											<input type="radio" name="radio" class="card-main__option-input">
+											<input type="radio" name="radio" class="card-main__option-input" data-index="1">
 											<span class="card-main__option-checkbox"></span>
 											<span class="card-main__option-text">Декоративная акриловая штукатурка и фасадная сосна</span>
 										</label>
@@ -109,7 +110,8 @@
 								</ul>
 								<p class="card-main__price">
 									Стоимость вместе с участком от <br>
-									<b>13 000 000 ₽</b>
+									<b data-index="0">13 000 000 ₽</b>
+									<b data-index="1">15 000 000 ₽</b>
 								</p>
 								<div class="card-main__input-wrap">
 									<input type="tel" class="card-main__input input input--tel" placeholder="Телефон">
@@ -302,7 +304,7 @@
 	<script src="libs/fancybox-2.1.7/source/jquery.fancybox.js"></script>
 	<script src="libs/fancybox-2.1.7/source/helpers/jquery.fancybox-media.js"></script>
 	<script src="libs/slick/slick.min.js"></script>
-	<script src="js/common.js?v=1"></script>
+	<script src="js/common.js?v=2"></script>
 
 	<script src="https://api-maps.yandex.ru/2.1/?apikey=bee5a468-d693-4038-a644-44be6dee59f0&lang=ru_RU" type="text/javascript"></script>
 	<script>
@@ -317,6 +319,17 @@
 					controls: ['zoomControl', 'geolocationControl']
 				}
 			);
+			var myPlacemark = new ymaps.Placemark([44.848393, 34.286901], {
+				balloonContentHeader: "«Аянский» Клубный коттеджный квартал",
+				balloonContentBody: " с. Заречное (пригород Симферополя)",
+				hintContent: "Показать информацию"
+			}, {
+				iconLayout: 'default#image',
+				iconImageHref: 'img/placeholder.svg',
+				iconImageSize: [50, 50],
+				iconImageOffset: [-25,-50]
+			});
+			myMap.geoObjects.add(myPlacemark);
 			myMap.behaviors.disable('scrollZoom');
 		}
 	</script>

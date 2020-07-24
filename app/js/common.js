@@ -109,4 +109,15 @@ $('.about__certificates-list').slick({
 	]
 });
 
+$('.card-main__img-box img:first').show();
+$('.card-main__price b:first').show();
+
+$('.card-main__option-input').change(function() {
+	let index = $(this).data('index');
+	$('.card-main__img-box img').hide();
+	$('.card-main__price b').hide();
+	$('.card-main__img-box img').eq(index).fadeIn();
+	$('.card-main__price b').eq(index).fadeIn();
+});
+
 });
