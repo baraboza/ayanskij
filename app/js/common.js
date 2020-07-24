@@ -116,8 +116,8 @@ $('.card-main__option-input').change(function() {
 	let index = $(this).data('index');
 	$('.card-main__img-box img').hide();
 	$('.card-main__price b').hide();
-	$('.card-main__img-box img').eq(index).fadeIn();
-	$('.card-main__price b').eq(index).fadeIn();
+	$('.card-main__img-box img[data-index=' + index + ']').fadeIn();
+	$('.card-main__price b[data-index=' + index + ']').fadeIn();
 });
 
 });
