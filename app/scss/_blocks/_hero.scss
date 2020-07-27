@@ -89,27 +89,28 @@
 
 		&__content {
 			padding-top: 200px;
+			max-width: 1190px;
 		}
 
 		&__title {
 			font-size: 35px;
 			line-height: 45px;
-			max-width: none;
+			max-width: 900px;
 		}
 
 		&__desc {
-			margin-top: 20px;
+			margin-top: 30px;
 			font-size: 18px;
 			line-height: 24px;
-			max-width: none;
+			max-width: 600px;
 		}
 
 		&__note {
-			margin-top: 20px;
+			margin-top: 30px;
 		}
 
 		&__button {
-			margin-top: 20px;
+			margin-top: 30px;
 		}
 	}
 }
